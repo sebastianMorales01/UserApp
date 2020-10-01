@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp"
+    >
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/imagen"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juan Perez"
+        android:layout_toRightOf="@id/item_img"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+569123123"
+        android:layout_below="@id/item_name"
+        android:layout_toRightOf="@id/item_img"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/item_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jp@gmail.com"
+        android:layout_below="@id/item_phone"
+        android:layout_toRightOf="@id/item_img"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5C5A5A"
+        android:layout_alignParentBottom="true"
+
+
+        />
+
+</RelativeLayout>
