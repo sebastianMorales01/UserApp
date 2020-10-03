@@ -5,8 +5,10 @@
     android:layout_height="85dp"
     android:paddingHorizontal="12dp"
     android:paddingTop="8dp"
-    android:background="#171717"
+    android:background="?android:attr/selectableItemBackground"
     android:id="@+id/item_card"
+
+
     >
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/item_img"
@@ -23,7 +25,7 @@
         android:text="Juan Perez"
         android:layout_toRightOf="@id/item_img"
         android:textStyle="bold"
-        android:textColor="#ffff"
+        android:textColor="#000000"
         />
     <TextView
         android:id="@+id/item_phone"
@@ -32,7 +34,7 @@
         android:text="+569123123"
         android:layout_below="@id/item_name"
         android:layout_toRightOf="@id/item_img"
-        android:textColor="#ffff"
+        android:textColor="#000000"
         />
     <TextView
         android:id="@+id/item_email"
@@ -41,14 +43,14 @@
         android:text="jp@gmail.com"
         android:layout_below="@id/item_phone"
         android:layout_toRightOf="@id/item_img"
-        android:textColor="#ffff"
+        android:textColor="#000000"
         />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@id/item_img"
-        android:background="#5E5C5C"
+        android:background="#000000"
         />
 
 </RelativeLayout>

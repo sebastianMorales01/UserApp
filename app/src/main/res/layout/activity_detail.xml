@@ -1,57 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingHorizontal="12dp"
-    android:paddingTop="8dp"
-    android:background="#171717"
+    android:padding="8dp"
+    android:orientation="vertical"
+
     tools:context=".DetailActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/item_img"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-
-        android:layout_centerVertical="true"
-        android:layout_marginRight="30px"
-        />
-
-    <TextView
-        android:id="@+id/item_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_toRightOf="@id/item_img"
-        android:textStyle="bold"
-        android:textColor="#ffff"
-        />
-    <TextView
-        android:id="@+id/item_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_below="@id/item_name"
-        android:layout_toRightOf="@id/item_img"
-        android:textColor="#ffff"
-        />
-    <TextView
-        android:id="@+id/item_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_below="@id/item_phone"
-        android:layout_toRightOf="@id/item_img"
-        android:textColor="#ffff"
-        />
     <ImageView
+        android:id="@+id/detail_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/item_img2"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="30px"/>
+        android:text="juan perez"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/detail_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="133"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/detail_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asd@gmail"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        />
 
 
-</RelativeLayout>
+
+</LinearLayout>

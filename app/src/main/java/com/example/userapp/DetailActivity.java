@@ -8,14 +8,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DetailActivity extends AppCompatActivity {
 
     String name,phone,email,picture;
 
-    private TextView item_name,item_phone,item_email;
-    private CircleImageView item_img;
+    private TextView detail_name,detail_phone,detail_email;
+    private ImageView detail_img;
 
 
     @Override
@@ -30,15 +32,17 @@ public class DetailActivity extends AppCompatActivity {
 
         Log.d("info",name+","+phone+","+email+","+picture);
 
-        item_name = findViewById(R.id.item_name);
-        item_phone = findViewById(R.id.item_phone);
-        item_email = findViewById(R.id.item_email);
-        item_img = findViewById(R.id.item_img);
+        detail_name = findViewById(R.id.detail_name);
+        detail_phone = findViewById(R.id.detail_phone);
+        detail_email = findViewById(R.id.detail_email);
+        detail_img = findViewById(R.id.detail_img);
 
 
-        item_name.setText(name);
-        item_phone.setText(phone);
-        item_email.setText(email);
+        detail_name.setText(name);
+        detail_phone.setText(phone);
+        detail_email.setText(email);
+
+        Glide.with(this).load(picture).into(detail_img);
 
 
 
